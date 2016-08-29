@@ -8,7 +8,10 @@ describe('Counter', () => {
     let Counter;
 
     beforeEach(() => {
+        console.log('beforeEach...')
+
         Counter = require('../screens/counter/index').default;
+        console.log('After beforeEach...')
         sut = shallow(<Counter />);
     });
 
